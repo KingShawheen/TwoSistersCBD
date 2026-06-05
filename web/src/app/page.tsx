@@ -39,90 +39,74 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Shop the Collection */}
-      <section className={styles.shopSection}>
-        <div className={styles.sectionHeader}>
-          <span className={`material-symbols-outlined ${styles.sectionIcon}`}>spa</span>
-          <h2 className={styles.sectionTitle}>Curated Wellness</h2>
-          <p className={styles.heroDesc}>
-            Elevate your daily ritual with our meticulously crafted formulations, designed to restore balance and enhance vitality.
+      {/* The Collection - Editorial Showcase */}
+      <section className={styles.editorialSection}>
+        <div className={styles.bgBlockBlush} />
+        <div className={styles.bgBlockCharcoal} />
+        
+        <div className={styles.editorialHeader}>
+          <h2 className={styles.editorialTitle}>The Collection</h2>
+          <p className={styles.heroDesc} style={{color: 'var(--color-on-background)', margin: '0 auto'}}>
+            A curated edit of high-fashion wellness essentials.
           </p>
         </div>
 
-        <div className={styles.grid}>
-          {/* Main Product (Tincture) */}
-          <div className={styles.mainProduct}>
-            <div className={`${styles.productCard} ${styles.mainProductCard}`}>
-              <div className={`${styles.badge} ${styles.badgeRight}`}>Bestseller</div>
+        <div className={styles.editorialGrid}>
+          
+          {/* Tincture */}
+          <div className={`${styles.productBlock} ${styles.product1}`}>
+            <div className={styles.productImageWrapper}>
               <Image 
                 src="/tincture_v3.png" 
-                alt="Two Sisters CBD Tincture" 
+                alt="The Daily Ritual Tincture" 
                 fill 
-                className={styles.productImage}
+                className={styles.editorialImage}
               />
-              <div className={styles.quickAddContainer}>
-                <button className={styles.quickAddBtn}>Quick Add</button>
-              </div>
             </div>
-            <div className={styles.productInfo}>
-              <div>
-                <h3 className={styles.productTitle}>Two Sisters CBD Tincture</h3>
-                <p className={styles.productSubtitle}>Full Spectrum • 1000mg</p>
-              </div>
-              <span className={styles.productPrice}>$120</span>
+            <div className={styles.productMeta}>
+              <h3 className={styles.productTitle}>The Daily Ritual</h3>
+              <p className={styles.productPrice}>$120</p>
+              <button className={styles.editorialLink}>Add to Cart</button>
             </div>
           </div>
 
-          {/* Side Products */}
-          <div className={styles.sideProducts}>
-            {/* Gummies */}
-            <div>
-              <div className={`${styles.productCard} ${styles.sideProductCard}`} style={{ backgroundColor: "var(--color-surface-variant)" }}>
-                <Image 
-                  src="/gummies_v3.png" 
-                  alt="Two Sisters CBD Gummies" 
-                  fill 
-                  className={styles.productImage}
-                />
-                <div className={styles.quickAddContainer}>
-                  <button className={styles.quickAddBtn}>Quick Add</button>
-                </div>
-              </div>
-              <div className={styles.productInfo}>
-                <div>
-                  <h3 className={styles.productTitle}>Two Sisters CBD Gummies</h3>
-                  <p className={styles.productSubtitle}>Citrus Flavor • Daily Balance</p>
-                </div>
-                <span className={styles.productPrice}>$85</span>
-              </div>
+          {/* Gummies */}
+          <div className={`${styles.productBlock} ${styles.product2}`}>
+            <div className={styles.productImageWrapper} style={{aspectRatio: '3/4'}}>
+              <Image 
+                src="/gummies_v3.png" 
+                alt="Midnight Confections Gummies" 
+                fill 
+                className={styles.editorialImage}
+              />
             </div>
-
-            {/* Pet Treats */}
-            <div>
-              <div className={`${styles.productCard} ${styles.sideProductCard}`} style={{ backgroundColor: "var(--color-tertiary-container)" }}>
-                <div className={`${styles.badge} ${styles.badgeLeft}`}>New</div>
-                <Image 
-                  src="/pettreats_v3.png" 
-                  alt="Two Sisters CBD Pet Treats" 
-                  fill 
-                  className={styles.productImage}
-                />
-                <div className={styles.quickAddContainer}>
-                  <button className={styles.quickAddBtn}>Quick Add</button>
-                </div>
-              </div>
-              <div className={styles.productInfo}>
-                <div>
-                  <h3 className={styles.productTitle}>Two Sisters CBD Pet Treats</h3>
-                  <p className={styles.productSubtitle}>Organic • Calming</p>
-                </div>
-                <span className={styles.productPrice}>$60</span>
-              </div>
+            <div className={styles.productMeta}>
+              <h3 className={styles.productTitle}>Midnight Confections</h3>
+              <p className={styles.productPrice}>$85</p>
+              <button className={styles.editorialLink}>Add to Cart</button>
             </div>
           </div>
+
+          {/* Pet Treats */}
+          <div className={`${styles.productBlock} ${styles.product3}`}>
+            <div className={styles.productImageWrapper} style={{aspectRatio: '1/1'}}>
+              <Image 
+                src="/pettreats_v3.png" 
+                alt="Paws & Presence Pet Treats" 
+                fill 
+                className={styles.editorialImage}
+              />
+            </div>
+            <div className={styles.productMeta}>
+              <h3 className={styles.productTitle}>Paws & Presence</h3>
+              <p className={styles.productPrice}>$65</p>
+              <button className={styles.editorialLink}>Add to Cart</button>
+            </div>
+          </div>
+
         </div>
-
-        <div style={{ textAlign: "center", marginTop: "96px" }}>
+        
+        <div style={{ textAlign: "center", marginTop: "128px", position: "relative", zIndex: 10 }}>
           <button style={{ 
             display: "inline-flex", 
             alignItems: "center", 
@@ -136,7 +120,7 @@ export default function Home() {
             paddingBottom: "4px",
             transition: "all 0.3s ease"
           }}>
-            <span>View All Collections</span>
+            <span>Shop the Full Collection</span>
             <span className="material-symbols-outlined" style={{ fontSize: "16px" }}>trending_flat</span>
           </button>
         </div>
