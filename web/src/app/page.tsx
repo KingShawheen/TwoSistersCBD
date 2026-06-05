@@ -72,7 +72,7 @@ export default function Home() {
 
           {/* Gummies */}
           <div className={`${styles.productBlock} ${styles.product2}`}>
-            <div className={styles.productImageWrapper} style={{aspectRatio: '3/4'}}>
+            <div className={styles.productImageWrapper} >
               <Image 
                 src="/gummies_v3.png" 
                 alt="Midnight Confections Gummies" 
@@ -89,7 +89,7 @@ export default function Home() {
 
           {/* Pet Treats */}
           <div className={`${styles.productBlock} ${styles.product3}`}>
-            <div className={styles.productImageWrapper} style={{aspectRatio: '1/1'}}>
+            <div className={styles.productImageWrapper} >
               <Image 
                 src="/pettreats_v3.png" 
                 alt="Paws & Presence Pet Treats" 
