@@ -9,8 +9,8 @@ export default function Home() {
       <section className={styles.heroSection}>
         <div className={styles.heroBackground}>
           <Image 
-            src="/tincture_v3.png" 
-            alt="Two Sisters CBD Tincture"
+            src="/hero_lifestyle_v1.png" 
+            alt="Two Sisters CBD Lifestyle"
             fill
             className={styles.heroImage}
             priority
