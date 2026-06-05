@@ -14,6 +14,8 @@ export default function Home() {
             fill
             className={styles.heroImage}
             priority
+            quality={100}
+            sizes="100vw"
           />
           <div className={styles.heroGradient} />
           <div className={styles.heroGradientSide} />
