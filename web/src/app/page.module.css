@@ -113,9 +113,15 @@
   margin: 0 auto;
   padding-left: var(--margin-desktop);
   padding-right: var(--margin-desktop);
-  background: transparent;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, var(--color-background) 100%);
   position: relative;
   z-index: 20;
+  margin-top: -64px;
+  border-radius: 48px 48px 0 0;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.04);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .sectionHeader {
