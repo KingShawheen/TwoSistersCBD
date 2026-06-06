@@ -57,7 +57,7 @@ export default function Home() {
           <div className={`${styles.productBlock} ${styles.product1}`}>
             <div className={styles.productImageWrapper}>
               <Image 
-                src="/tincture_v3.png" 
+                src="/tincture_real.png" 
                 alt="The Daily Ritual Tincture" 
                 fill 
                 className={styles.editorialImage}
@@ -74,7 +74,7 @@ export default function Home() {
           <div className={`${styles.productBlock} ${styles.product2}`}>
             <div className={styles.productImageWrapper} >
               <Image 
-                src="/gummies_v3.png" 
+                src="/gummies_real.png" 
                 alt="Midnight Confections Gummies" 
                 fill 
                 className={styles.editorialImage}
@@ -91,7 +91,7 @@ export default function Home() {
           <div className={`${styles.productBlock} ${styles.product3}`}>
             <div className={styles.productImageWrapper} >
               <Image 
-                src="/pettreats_v3.png" 
+                src="/treats_real.png" 
                 alt="Paws & Presence Pet Treats" 
                 fill 
                 className={styles.editorialImage}
@@ -121,7 +121,7 @@ export default function Home() {
             transition: "all 0.3s ease"
           }}>
             <span>Shop the Full Collection</span>
-            <span className="material-symbols-outlined" style={{ fontSize: "16px" }}>trending_flat</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
           </button>
         </div>
       </section>
