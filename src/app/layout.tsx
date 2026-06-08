@@ -26,9 +26,9 @@ export default function RootLayout({
             </Link>
             <ul className={styles.navLinks}>
               <li><Link href="/shop" className={`${styles.navLink} ${styles.navLinkActive}`}>Shop</Link></li>
-              <li><Link href="/" className={styles.navLink}>Philosophy</Link></li>
-              <li><Link href="/" className={styles.navLink}>Ingredients</Link></li>
-              <li><Link href="/" className={styles.navLink}>About</Link></li>
+              <li><Link href="/philosophy" className={styles.navLink}>Philosophy</Link></li>
+              <li><Link href="/ingredients" className={styles.navLink}>Ingredients</Link></li>
+              <li><Link href="/about" className={styles.navLink}>About</Link></li>
             </ul>
             <div className={styles.navActions}>
               <button aria-label="Cart" style={{ display: 'flex', alignItems: 'center' }}>
