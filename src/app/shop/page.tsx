@@ -4,14 +4,14 @@ import Link from "next/link";
 
 export default function Shop() {
   const products = [
-    { id: 'caps', name: 'Balance Capsules', image: '/products/CAPS.webp', price: '$75' },
-    { id: 'chill', name: 'Chill Tincture', image: '/products/CHILL.webp', price: '$120' },
-    { id: 'gum', name: 'Wellness Gummies', image: '/products/GUM.webp', price: '$85' },
-    { id: 'joint', name: 'Joint Support', image: '/products/JOINT.webp', price: '$95' },
-    { id: 'pain', name: 'Pain Relief Stick', image: '/products/PAINST.webp', price: '$65' },
-    { id: 'pet1', name: 'Paws & Presence Drops', image: '/products/PET-1.webp', price: '$55' },
-    { id: 'relax', name: 'Relax Tincture', image: '/products/RELAX.webp', price: '$110' },
-    { id: 'zen', name: 'Zen Tincture', image: '/products/ZEN.webp', price: '$130' }
+    { id: 'caps', name: 'Balance Capsules', image: '/products/CAPS_luxury.png', price: '$75' },
+    { id: 'chill', name: 'Chill Tincture', image: '/products/CHILL_luxury.png', price: '$120' },
+    { id: 'gum', name: 'Wellness Gummies', image: '/products/GUM_luxury.png', price: '$85' },
+    { id: 'joint', name: 'Joint Support', image: '/products/JOINT_luxury.png', price: '$95' },
+    { id: 'pain', name: 'Pain Relief Stick', image: '/products/PAINST_luxury.png', price: '$65' },
+    { id: 'pet1', name: 'Paws & Presence Drops', image: '/products/PET1_luxury.png', price: '$55' },
+    { id: 'relax', name: 'Relax Tincture', image: '/products/RELAX_luxury.png', price: '$110' },
+    { id: 'zen', name: 'Zen Tincture', image: '/products/ZEN_luxury.png', price: '$130' }
   ];
 
   return (
