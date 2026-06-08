@@ -26,7 +26,7 @@ export default function Home() {
             <span className={styles.heroLabel}>Botanical Collection</span>
             <h1 className={styles.heroTitle}>The New Standard of Botanical Luxury</h1>
             <p className={styles.heroDesc}>
-              Experience the intersection of science and style with our curated CBD collection. Formulated for the modern aesthete.
+              Experience the intersection of science and style with our curated CBD collection. Formulated for modern wellness.
             </p>
             <button className={styles.primaryButton}>
               Shop the Collection
@@ -107,22 +107,27 @@ export default function Home() {
         </div>
         
         <div style={{ textAlign: "center", marginTop: "128px", position: "relative", zIndex: 10 }}>
-          <button style={{ 
-            display: "inline-flex", 
-            alignItems: "center", 
-            gap: "8px",
-            color: "var(--color-primary)",
-            fontFamily: "var(--font-sans)",
-            fontSize: "14px",
-            textTransform: "uppercase",
-            letterSpacing: "0.1em",
-            borderBottom: "1px solid var(--color-primary)",
-            paddingBottom: "4px",
-            transition: "all 0.3s ease"
-          }}>
-            <span>Shop the Full Collection</span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </button>
+          <Link href="/shop" style={{ textDecoration: 'none' }}>
+            <button style={{ 
+              display: "inline-flex", 
+              alignItems: "center", 
+              gap: "8px",
+              color: "var(--color-primary)",
+              fontFamily: "var(--font-sans)",
+              fontSize: "14px",
+              textTransform: "uppercase",
+              letterSpacing: "0.1em",
+              borderBottom: "1px solid var(--color-primary)",
+              paddingBottom: "4px",
+              transition: "all 0.3s ease",
+              background: "transparent",
+              borderTop: "none", borderLeft: "none", borderRight: "none",
+              cursor: "pointer"
+            }}>
+              <span>Shop the Full Collection</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </Link>
         </div>
       </section>
     </>

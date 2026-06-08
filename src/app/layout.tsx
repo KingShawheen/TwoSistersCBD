@@ -25,7 +25,7 @@ export default function RootLayout({
               <img src="/logo.png" alt="Two Sisters CBD Logo" style={{ height: "60px", width: "auto", objectFit: "contain" }} />
             </Link>
             <ul className={styles.navLinks}>
-              <li><Link href="/" className={`${styles.navLink} ${styles.navLinkActive}`}>Shop</Link></li>
+              <li><Link href="/shop" className={`${styles.navLink} ${styles.navLinkActive}`}>Shop</Link></li>
               <li><Link href="/" className={styles.navLink}>Philosophy</Link></li>
               <li><Link href="/" className={styles.navLink}>Ingredients</Link></li>
               <li><Link href="/" className={styles.navLink}>About</Link></li>
@@ -50,11 +50,11 @@ export default function RootLayout({
           <div className={styles.footerGrid}>
             <div className={styles.footerBrand}>
               <h4>Two Sisters CBD</h4>
-              <p>Curated wellness for the modern aesthete. High-fashion minimalism meets botanical luxury.</p>
+              <p>Curated wellness for everyday balance. High-fashion minimalism meets botanical luxury.</p>
             </div>
             <div className={styles.footerCol}>
               <h4>Explore</h4>
-              <Link href="/">Shop All</Link>
+              <Link href="/shop">Shop All</Link>
               <Link href="/">Our Story</Link>
               <Link href="/">Journal</Link>
             </div>

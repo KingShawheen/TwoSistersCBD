@@ -1,0 +1,117 @@
+.shopContainer {
+  padding: 160px 48px;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: var(--color-background);
+}
+
+.shopHeader {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.shopTitle {
+  font-family: var(--font-serif);
+  font-size: 48px;
+  font-weight: 300;
+  color: var(--color-on-background);
+  margin-bottom: 16px;
+}
+
+.shopDesc {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  color: var(--color-on-background);
+  opacity: 0.7;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 48px;
+}
+
+.productCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.productCard:hover {
+  transform: translateY(-8px);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3/4;
+  background-color: #f7f3ef; /* Soft complementary background for transparency */
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.productImage {
+  object-fit: contain;
+  padding: 24px;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.productCard:hover .productImage {
+  transform: scale(1.05);
+}
+
+.productInfo {
+  text-align: center;
+  width: 100%;
+}
+
+.productName {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-on-background);
+  margin-bottom: 8px;
+}
+
+.productPrice {
+  font-family: var(--font-serif);
+  font-size: 16px;
+  color: var(--color-primary);
+  margin-bottom: 16px;
+}
+
+.addToCartBtn {
+  background: transparent;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.addToCartBtn:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .shopContainer {
+    padding: 120px 24px;
+  }
+  
+  .productGrid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 32px;
+  }
+}
